@@ -4,13 +4,13 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Intermediate-blue?style=for-the-badge)
 
-> A complete step-by-step Bank Database project in MySQL covering table design, constraints, relationships, DML operations, SELECT filtering, sorting, pattern matching, and CASE statements.
+> A complete step-by-step Bank Database project in MySQL covering table design, constraints, relationships, DML, SELECT queries, string/date/math functions, aggregates, GROUP BY, and HAVING.
 
 ---
 
 ### 📌 Project Overview
 This repository contains a full **Bank Database** built from scratch using MySQL.  
-It is organized into progressive labs from basic table creation to advanced querying and data categorization.
+It is organized into progressive labs from basic table creation to functions, aggregation, and grouped analysis.
 
 ---
 
@@ -63,22 +63,29 @@ It is organized into progressive labs from basic table creation to advanced quer
 #### Lab 5 – SELECT Queries & Filtering
 - WHERE conditions
 - BETWEEN, IN, AND, OR
-- Basic filtering practice
 
 **File:** `BankDatabase5.sql`
 
 ---
 
-#### Lab 6 – Advanced SELECT (Sorting, Pattern Matching & CASE)
-- `ORDER BY` (ASC / DESC)
-- `DISTINCT`
-- `LIMIT` & `OFFSET`
-- `LIKE` pattern matching
-- `IS NULL` / `IS NOT NULL`
-- `REGEXP`
-- `CASE` statements for account & transaction categorization
+#### Lab 6 – Advanced SELECT
+- ORDER BY, DISTINCT, LIMIT, OFFSET
+- LIKE, REGEXP, IS NULL
+- CASE statements
 
 **File:** `BankDatabase6.sql`
+
+---
+
+#### Lab 7 – SQL Functions, Aggregates & GROUP BY
+- **String functions:** `UPPER`, `LOWER`, `LENGTH`, `LEFT`, `RIGHT`, `CONCAT`, `TRIM`, `MID`
+- **Math functions:** `ROUND`, `CEIL`, `FLOOR`, `ABS`, `MOD`
+- **Date functions:** `CURRENT_DATE`, `NOW`, `YEAR`, `MONTH`, `DATEDIFF`
+- **Conditional functions:** `IF`, `IFNULL`, `NULLIF`, `CASE`
+- **Aggregate functions:** `SUM`, `AVG`, `MAX`, `MIN`, `COUNT`
+- **GROUP BY** and **HAVING**
+
+**File:** `BankDatabase7.sql`
 
 ---
 
@@ -86,18 +93,18 @@ It is organized into progressive labs from basic table creation to advanced quer
 - Database & table design
 - Constraints & relationships
 - DML operations
-- Filtering with `WHERE`
-- Sorting with `ORDER BY`
-- Pattern matching (`LIKE`, `REGEXP`)
-- Pagination (`LIMIT`, `OFFSET`)
-- Conditional logic (`CASE`)
+- Filtering, sorting & pattern matching
+- String, math & date functions
+- Aggregate functions
+- `GROUP BY` & `HAVING`
+- Conditional logic (`CASE`, `IF`)
 - EER Diagram design
 
 ---
 
 ### 🚀 How to Run
 1. Open **MySQL Workbench**
-2. Run the scripts **in order** (Lab 1 → Lab 6)
+2. Run the scripts **in order** (Lab 1 → Lab 7)
 3. View the EER Diagram (`BankDatabase3.png`)
 
 ---
