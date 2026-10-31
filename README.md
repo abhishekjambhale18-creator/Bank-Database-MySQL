@@ -4,25 +4,25 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-blue?style=for-the-badge)
 
-> A complete step-by-step Bank Database project in MySQL covering table design, constraints, relationships, DML, SELECT queries, SQL functions, aggregates, GROUP BY, HAVING, and window functions.
+> A complete step-by-step Bank Database project in MySQL covering table design, constraints, relationships, DML, SELECT queries, SQL functions, aggregates, window functions, and JOINs.
 
 ---
 
 ### 📌 Project Overview
 This repository contains a full **Bank Database** built from scratch using MySQL.  
-It is organized into progressive labs from basic table creation to advanced analytical queries using window functions.
+It is organized into progressive labs from basic table creation to advanced querying with joins and window functions.
 
 ---
 
 ### 🗂️ Database Tables
 
-| Table          | Description                          |
-|----------------|--------------------------------------|
-| `Customers`    | Customer personal information        |
-| `Accounts`     | Account details linked to customers  |
-| `Transactions` | Deposit / Withdraw records           |
-| `Branches`     | Bank branch information              |
-| `Loans`        | Loan details linked to customers     |
+| Table | Description |
+| --- | --- |
+| `Customers` | Customer personal information |
+| `Accounts` | Account details linked to customers |
+| `Transactions` | Deposit / Withdraw records |
+| `Branches` | Bank branch information |
+| `Loans` | Loan details linked to customers |
 
 ---
 
@@ -78,9 +78,7 @@ It is organized into progressive labs from basic table creation to advanced anal
 ---
 
 #### Lab 7 – SQL Functions, Aggregates & GROUP BY
-- String functions (`UPPER`, `LOWER`, `CONCAT`, `LEFT`, `RIGHT`, `TRIM`)
-- Math functions (`ROUND`, `CEIL`, `FLOOR`, `ABS`, `MOD`)
-- Date functions (`CURRENT_DATE`, `NOW`, `YEAR`, `MONTH`, `DATEDIFF`)
+- String, math, and date functions
 - Aggregate functions (`SUM`, `AVG`, `MAX`, `MIN`, `COUNT`)
 - `GROUP BY` and `HAVING`
 
@@ -89,13 +87,21 @@ It is organized into progressive labs from basic table creation to advanced anal
 ---
 
 #### Lab 8 – Window Functions
-- `ROW_NUMBER()`
-- `RANK()` and `DENSE_RANK()`
-- `LAG()` and `LEAD()`
-- `PARTITION BY`
-- Running totals using `SUM() OVER()`
+- `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`
+- `LAG()`, `LEAD()`
+- `PARTITION BY` and running totals
 
 **File:** `BankDatabase8.sql`
+
+---
+
+#### Lab 9 – SQL JOINs
+- `INNER JOIN` between Accounts and Transactions
+- `LEFT JOIN` to include accounts without transactions
+- Filtered joins (`WHERE TransactionType = 'Deposit'`)
+- Join with conditions and `ORDER BY`
+
+**File:** `BankDatabase9.sql`
 
 ---
 
@@ -106,10 +112,29 @@ It is organized into progressive labs from basic table creation to advanced anal
 - Filtering, sorting & pattern matching
 - String, math & date functions
 - Aggregate functions
-- `GROUP BY` & `HAVING`
-- Window functions (`ROW_NUMBER`, `RANK`, `LAG`, `LEAD`)
+- Window functions
+- SQL JOINs (`INNER JOIN`, `LEFT JOIN`)
 - EER Diagram design
 
+---
+
+### 📂 Project Structure
+
+```text
+Bank-Database-MySQL/
+│
+├── BankDatabase1.sql      # Lab 1 – Setup
+├── BankDatabase2.sql      # Lab 2 – Constraints
+├── BankDatabase3.sql      # Lab 3 – Relationships
+├── BankDatabase3.png      # EER Diagram
+├── BankDatabase4.sql      # Lab 4 – DML Operations
+├── BankDatabase5.sql      # Lab 5 – SELECT Filtering
+├── BankDatabase6.sql      # Lab 6 – Advanced SELECT
+├── BankDatabase7.sql      # Lab 7 – Functions & Aggregates
+├── BankDatabase8.sql      # Lab 8 – Window Functions
+├── BankDatabase9.sql      # Lab 9 – SQL JOINs
+└── README.md
+```
 ---
 
 ### 🚀 How to Run
