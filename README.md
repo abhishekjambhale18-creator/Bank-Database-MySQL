@@ -4,13 +4,14 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-blue?style=for-the-badge)
 
-> A complete step-by-step Bank Database project in MySQL covering table design, constraints, relationships, DML, SELECT queries, SQL functions, aggregates, window functions, and JOINs.
+> A complete step-by-step Bank Database project in MySQL covering table design, constraints, relationships, DML, SELECT queries, SQL functions, aggregates, window functions, JOINs, and subqueries.
 
 ---
 
 ### 📌 Project Overview
+
 This repository contains a full **Bank Database** built from scratch using MySQL.  
-It is organized into progressive labs from basic table creation to advanced querying with joins and window functions.
+It is organized into progressive labs from basic table creation to advanced querying with joins and subqueries.
 
 ---
 
@@ -98,14 +99,24 @@ It is organized into progressive labs from basic table creation to advanced quer
 #### Lab 9 – SQL JOINs
 - `INNER JOIN` between Accounts and Transactions
 - `LEFT JOIN` to include accounts without transactions
-- Filtered joins (`WHERE TransactionType = 'Deposit'`)
-- Join with conditions and `ORDER BY`
+- Filtered joins and `ORDER BY`
 
 **File:** `BankDatabase9.sql`
 
 ---
 
+#### Lab 10 – Subqueries
+- Average calculation using subquery
+- Filter rows above average amount/balance
+- `IN` subquery for accounts with deposits
+- Find account with maximum balance
+
+**File:** `BankDatabase10.sql`
+
+---
+
 ### 🛠️ Skills Demonstrated
+
 - Database & table design
 - Constraints & relationships
 - DML operations
@@ -114,6 +125,7 @@ It is organized into progressive labs from basic table creation to advanced quer
 - Aggregate functions
 - Window functions
 - SQL JOINs (`INNER JOIN`, `LEFT JOIN`)
+- Subqueries
 - EER Diagram design
 
 ---
@@ -123,34 +135,39 @@ It is organized into progressive labs from basic table creation to advanced quer
 ```text
 Bank-Database-MySQL/
 │
-├── BankDatabase1.sql      # Lab 1 – Setup
-├── BankDatabase2.sql      # Lab 2 – Constraints
-├── BankDatabase3.sql      # Lab 3 – Relationships
-├── BankDatabase3.png      # EER Diagram
-├── BankDatabase4.sql      # Lab 4 – DML Operations
-├── BankDatabase5.sql      # Lab 5 – SELECT Filtering
-├── BankDatabase6.sql      # Lab 6 – Advanced SELECT
-├── BankDatabase7.sql      # Lab 7 – Functions & Aggregates
-├── BankDatabase8.sql      # Lab 8 – Window Functions
-├── BankDatabase9.sql      # Lab 9 – SQL JOINs
+├── BankDatabase1.sql       # Lab 1 – Setup
+├── BankDatabase2.sql       # Lab 2 – Constraints
+├── BankDatabase3.sql       # Lab 3 – Relationships
+├── BankDatabase3.png       # EER Diagram
+├── BankDatabase4.sql       # Lab 4 – DML Operations
+├── BankDatabase5.sql       # Lab 5 – SELECT Filtering
+├── BankDatabase6.sql       # Lab 6 – Advanced SELECT
+├── BankDatabase7.sql       # Lab 7 – Functions & Aggregates
+├── BankDatabase8.sql       # Lab 8 – Window Functions
+├── BankDatabase9.sql       # Lab 9 – SQL JOINs
+├── BankDatabase10.sql      # Lab 10 – Subqueries
 └── README.md
 ```
+
 ---
 
 ### 🚀 How to Run
+
 1. Open **MySQL Workbench**
-2. Run the scripts **in order** (Lab 1 → Lab 8)
+2. Run the scripts **in order** (Lab 1 → Lab 10)
 3. View the EER Diagram (`BankDatabase3.png`)
 
 ---
 
 ### 🧰 Tools Used
+
 - MySQL
 - MySQL Workbench
 
 ---
 
 ### 👨‍💻 Author
+
 **Abhishek Jambhale**  
 MCA Student | Aspiring Data Analyst & Data Scientist  
 📍 Pune, Maharashtra
