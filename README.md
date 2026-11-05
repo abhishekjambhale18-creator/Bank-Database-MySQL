@@ -4,14 +4,14 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-blue?style=for-the-badge)
 
-> A complete step-by-step Bank Database project in MySQL covering table design, constraints, relationships, DML, SELECT queries, SQL functions, aggregates, window functions, JOINs, and subqueries.
+> A complete step-by-step Bank Database project in MySQL covering table design, constraints, relationships, DML, SELECT queries, SQL functions, aggregates, window functions, JOINs, subqueries, and views.
 
 ---
 
 ### 📌 Project Overview
 
 This repository contains a full **Bank Database** built from scratch using MySQL.  
-It is organized into progressive labs from basic table creation to advanced querying with joins and subqueries.
+It is organized into progressive labs from basic table creation to advanced querying with joins, subqueries, and views.
 
 ---
 
@@ -115,6 +115,15 @@ It is organized into progressive labs from basic table creation to advanced quer
 
 ---
 
+#### Lab 11 – SQL Views
+- Create view for high balance accounts
+- `CREATE OR REPLACE VIEW` with JOIN
+- Query data from view with sorting
+
+**File:** `BankDatabase11.sql`
+
+---
+
 ### 🛠️ Skills Demonstrated
 
 - Database & table design
@@ -126,6 +135,7 @@ It is organized into progressive labs from basic table creation to advanced quer
 - Window functions
 - SQL JOINs (`INNER JOIN`, `LEFT JOIN`)
 - Subqueries
+- SQL Views (`CREATE VIEW`, `CREATE OR REPLACE VIEW`)
 - EER Diagram design
 
 ---
@@ -146,6 +156,7 @@ Bank-Database-MySQL/
 ├── BankDatabase8.sql       # Lab 8 – Window Functions
 ├── BankDatabase9.sql       # Lab 9 – SQL JOINs
 ├── BankDatabase10.sql      # Lab 10 – Subqueries
+├── BankDatabase11.sql      # Lab 11 – Views
 └── README.md
 ```
 
@@ -154,7 +165,7 @@ Bank-Database-MySQL/
 ### 🚀 How to Run
 
 1. Open **MySQL Workbench**
-2. Run the scripts **in order** (Lab 1 → Lab 10)
+2. Run the scripts **in order** (Lab 1 → Lab 11)
 3. View the EER Diagram (`BankDatabase3.png`)
 
 ---
@@ -171,6 +182,9 @@ Bank-Database-MySQL/
 **Abhishek Jambhale**  
 MCA Student | Aspiring Data Analyst & Data Scientist  
 📍 Pune, Maharashtra
+
+- LinkedIn: [abhishek-jambhale](https://www.linkedin.com/in/abhishek-jambhale-4a3002442)
+- Email: abhishekjambhale.18@gmail.com
 
 ---
 
